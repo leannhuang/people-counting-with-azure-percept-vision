@@ -6,6 +6,9 @@ The goal of this project is to be able to detect and count the people with Perce
 
 ## Solution Architecture
 ![Solution Architecture](docs/images/solution-architect.png)
+- Input : video stream
+- Output: count of people in Power BI dashboard 
+![Power BI](docs/images/power-bi.png)
 
 
 ## Prerequisites
