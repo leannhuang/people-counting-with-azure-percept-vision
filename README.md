@@ -11,7 +11,7 @@ The goal of this project is to be able to detect and count the people with Perce
 ## Prerequisites
 - Percept DK ([Purchase](https://www.microsoft.com/en-us/store/build/azure-percept/8v2qxmzbz9vc))
 - Azure Subscription : [Free trial account](https://azure.microsoft.com/en-us/free/)
-- Power BI subsription: [Try Power BI fro free](https://go.microsoft.com/fwlink/?LinkId=874445&clcid=0x409&cmpid=pbi-gett-hero-try-powerbifree)
+- Power BI subsription: [Try Power BI for free](https://go.microsoft.com/fwlink/?LinkId=874445&clcid=0x409&cmpid=pbi-gett-hero-try-powerbifree)
   
 
 ## Device setup
