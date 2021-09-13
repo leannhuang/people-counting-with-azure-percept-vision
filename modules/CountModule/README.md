@@ -1,14 +1,14 @@
 # Edge Deployment
-Use this information to deploy smart plug modules on your edge device
+Use this information to deploy people counting modules on your edge device
 
 ## Contents 
 
 | File             | Description                                                   |
 |-------------------------|---------------------------------------------------------------|
 | `readme.md`             | This readme file                                              |
-| `Dockerfile.arm64v8`    | The Dockerfile of the smart plug module                       |
+| `Dockerfile.arm64v8`    | The Dockerfile of the people counting module                       |
 | `main.py`               | The main program file                                         |
-| `module.json`           | The config of the smart plug module                           |
+| `module.json`           | The config of the people counting module                           |
 | `requirement.txt`       | List of all dependent Python libraries                        |
 
 ## Setup for edge
