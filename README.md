@@ -39,14 +39,14 @@ The goal of this project is to be able to detect and count the people with Perce
 5. Add an output to the Stream Analytics job [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-an-output-to-the-stream-analytics-job)
 6. Configure the SQL query of the Stream Analytics [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#configure-the-query-of-the-stream-analytics-job)
 
-    Replace the `SQL query` below
+    Replace the `SQL query` below and fill in corresponding values
     ```
         SELECT
             *
         INTO
-            PBVisualizationInput
+            [YourInputAlias]
         FROM
-            PBVisualizationOutput
+            [YourOutputAlias]
         WHERE People_Count IS NOT NULL
     ```
 
