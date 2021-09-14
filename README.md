@@ -13,8 +13,9 @@ The goal of this project is to be able to detect and count the people with Perce
 
 ## Prerequisites
 - Percept DK ([Purchase](https://www.microsoft.com/en-us/store/build/azure-percept/8v2qxmzbz9vc))
-- Azure Subscription : [Free trial account](https://azure.microsoft.com/en-us/free/)
-- Power BI subsription: [Try Power BI for free](https://go.microsoft.com/fwlink/?LinkId=874445&clcid=0x409&cmpid=pbi-gett-hero-try-powerbifree)
+- Azure Subscription : ([Free trial account](https://azure.microsoft.com/en-us/free/))
+- Power BI subsription: ([Try Power BI for free](https://go.microsoft.com/fwlink/?LinkId=874445&clcid=0x409&cmpid=pbi-gett-hero-try-powerbifree))
+- Power BI workspace: ([Create the new workspaces in Power BI](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-create-the-new-workspaces#create-one-of-the-new-workspaces))
   
 
 ## Device setup
@@ -36,8 +37,21 @@ The goal of this project is to be able to detect and count the people with Perce
 3. [Create Stream Analytics Service](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-a-stream-analytics-job)
 4. [Add an input to the Stream Analytics job](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-an-input-to-the-stream-analytics-job)
 5. [Add an output to the Stream Analytics job](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-an-output-to-the-stream-analytics-job)
-6. [Run the Stream Analytics job](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#run-the-stream-analytics-job)
-7. [Create and publish a Power BI report to visualize the data](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-and-publish-a-power-bi-report-to-visualize-the-data) 
+6. [Configure the SQL query of the Stream Analytics](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#configure-the-query-of-the-stream-analytics-job)
+
+Replace the SQL query below
+```
+    SELECT
+        *
+    INTO
+        PBVisualizationInput
+    FROM
+        PBVisualizationOutput
+    WHERE People_Count IS NOT NULL
+```
+
+7. [Run the Stream Analytics job](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#run-the-stream-analytics-job)
+8. [Create and publish a Power BI report to visualize the data](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-and-publish-a-power-bi-report-to-visualize-the-data) 
    
 
 ## Credits and references
