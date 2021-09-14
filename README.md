@@ -6,9 +6,13 @@ The goal of this project is to be able to detect and count the people with Perce
 
 ## Solution Architecture
 ![Solution Architecture](docs/images/solution-architect.png)
+
 - Input : video stream
+    ![Input](docs/images/input.png)
+
 - Output: count of people in Power BI dashboard 
-![Power BI](docs/images/power-bi.png)
+  
+    ![Power BI](docs/images/power-bi.png)
 
 
 ## Prerequisites
@@ -57,10 +61,11 @@ The goal of this project is to be able to detect and count the people with Perce
     - On the `Fields` pane, expand the table that you specified when you created the output for the Stream Analytics job.
     - Drag `EventEnqueuedUtcTime` to Axis on the Visualizations pane.
     - Drag `People_Count` to Values.
+
         ![Power BI Columns](docs/images/power-bi-columns.png)
     - A line chart is created. The x-axis displays date and time in the UTC time zone. The y-axis displays count of the people from the Percept DK.
     - Save the report.
-  
+    
         ![Save the report](docs/images/save-report.png)
     
 
@@ -68,3 +73,4 @@ The goal of this project is to be able to detect and count the people with Perce
 ## Credits and references
 - [Tutorial: Visualize real-time sensor data from Azure IoT Hub using Power BI](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-a-stream-analytics-job)
 - [Message handler sample code](https://github.com/Azure/azure-iot-sdk-python/blob/master/azure-iot-device/samples/async-edge-scenarios/receive_data.py)
+- [Youtube Video](https://www.youtube.com/watch?v=AyUvpXyUqQo)
