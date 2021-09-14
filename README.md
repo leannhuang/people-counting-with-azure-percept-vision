@@ -60,7 +60,7 @@ The goal of this project is to be able to detect and count the people with Perce
         ![Power BI Columns](docs/images/power-bi-columns.png)
     - A line chart is created. The x-axis displays date and time in the UTC time zone. The y-axis displays count of the people from the Percept DK.
     - Save the report.
-        ![Save the report]((docs/images/save-report.png))
+        ![Save the report](docs/images/save-report.png)
     
 
 
