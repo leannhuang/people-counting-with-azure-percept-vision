@@ -53,7 +53,16 @@ The goal of this project is to be able to detect and count the people with Perce
 
 8. Run the Stream Analytics job [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#run-the-stream-analytics-job)
 9. Create and publish a Power BI report to visualize the data [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-and-publish-a-power-bi-report-to-visualize-the-data) 
-   
+    For the step 6,
+    - On the `Fields` pane, expand the table that you specified when you created the output for the Stream Analytics job.
+    - Drag `EventEnqueuedUtcTime` to Axis on the Visualizations pane.
+    - Drag `People_Count` to Values.
+        ![Power BI Columns](docs/images/power-bi-columns.png)
+    - A line chart is created. The x-axis displays date and time in the UTC time zone. The y-axis displays count of the people from the Percept DK.
+    - Save the report.
+        ![Save the report]((docs/images/save-report.png))
+    
+
 
 ## Credits and references
 - [Tutorial: Visualize real-time sensor data from Azure IoT Hub using Power BI](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-a-stream-analytics-job)
