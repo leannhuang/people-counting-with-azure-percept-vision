@@ -3,6 +3,10 @@ Detect and count the people using the Percept DK hardware, Azure IoT Hub, Stream
 
 The goal of this project is to be able to detect and count the people with Percept DK advice and show the figure in Power BI dashboard.
 
+Future work:
+- Add the steps to activate AVA pipeline 
+- Create the SQL server and design the data schema 
+- Design the Power BI dashbaord and embed the recording video from AVA portal
 
 ## Solution Architecture
 ![Solution Architecture](docs/images/solution-architect.png)
