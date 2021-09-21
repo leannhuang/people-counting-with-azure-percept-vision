@@ -6,7 +6,7 @@ The goal of this project is to be able to detect and count the people with Perce
 Future work:
 - Add the steps in README to activate the AVA pipeline 
 - Create the SQL server and design the data schema 
-- Design the Power BI dashbaord and embed the recording video from the AVA portal
+- Design the Power BI dashboard and embed the recording video from the AVA portal
 
 ## Solution Architecture
 ![Solution Architecture](docs/images/solution-architect.png)
@@ -42,7 +42,7 @@ Future work:
 ## Steps
 1. Create a file named `.env` in this folder based on `envtemplate`. Provide values for all variables.
 2. Visit the [CountModule folder](https://github.com/leannhuang/people-counting-with-azure-percept-vision/tree/main/modules/CountModule) to deploy edge modules on your edge device
-3. Add a consumer group to your IoT hub [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#configure-the-query-of-the-stream-analytics-job)
+3. Add a consumer group to your IoT hub [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-a-consumer-group-to-your-iot-hub)
 4. Create Stream Analytics Service [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#create-a-stream-analytics-job)
 5. Add an input to the Stream Analytics job [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-an-input-to-the-stream-analytics-job)
 6. Add an output to the Stream Analytics job [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi#add-an-output-to-the-stream-analytics-job)
