@@ -13,9 +13,9 @@ Use this information to deploy people counting modules on your edge device
 
 ## Setup for edge
 
-1. Fill your ACR address in module.json file
+1. Fill your ACR address in module.json file (ex: dk361d.azurecr.io/pplcount)
 ```
-   "repository": "<Your container registry address>"
+   "repository": "<Your container registry login server/respository name>"
 ```
 2. Build and push your IoT Edge solutions to your private ACR 
 Use VSCode as in [here](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?view=iotedge-2020-11#build-and-push-your-solution) to build and push your solutions
