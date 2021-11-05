@@ -57,32 +57,6 @@
           }
         },
         "modules": {
-          "avaedge": {
-            "version": "1.1",
-            "type": "docker",
-            "status": "running",
-            "restartPolicy": "always",
-            "settings": {
-              "image": "mcr.microsoft.com/media/video-analyzer:1",
-              "createOptions": {
-                "HostConfig": {
-                  "LogConfig": {
-                    "Type": "",
-                    "Config": {
-                      "max-size": "10m",
-                      "max-file": "10"
-                    }
-                  },
-                  "Binds": [
-                    "$VIDEO_OUTPUT_FOLDER_ON_DEVICE:/var/media/",
-                    "$APPDATA_FOLDER_ON_DEVICE:/var/lib/videoanalyzer"
-                  ],
-                  "IpcMode": "host",
-                  "ShmSize": 1536870912
-                }
-              }
-            }
-          },
           "CountModule": {
             "version": "1.0",
             "type": "docker",
@@ -127,25 +101,11 @@
         "schemaVersion": "1.0",
         "routes": {
           "AzureEyeToCountModule": "FROM /messages/modules/azureeyemodule/outputs/* INTO BrokeredEndpoint(\"/modules/CountModule/inputs/CountInput\")",
-          "CountModuleToHub": "FROM /messages/modules/CountModule/outputs/* INTO $upstream",
-          "AVAToHub": "FROM /messages/modules/avaedge/outputs/* INTO $upstream"
+          "CountModuleToHub": "FROM /messages/modules/CountModule/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
         }
-      }
-    },
-    "avaedge": {
-      "properties.desired": {
-        "applicationDataDirectory": "/var/lib/videoanalyzer",
-        "ProvisioningToken": "$AVA_PROVISIONING_TOKEN",
-        "diagnosticsEventsOutputName": "diagnostics",
-        "operationalEventsOutputName": "operational",
-        "logLevel": "Verbose",
-        "logCategories": "application, events",
-        "debugLogsDirectory": "/tmp",
-        "allowUnsecuredEndpoints": true,
-        "telemetryOptOut": false
       }
     },
     "azureeyemodule": {
