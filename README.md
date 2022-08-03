@@ -2,7 +2,7 @@
 Detect and count the people using the Percept DK hardware, Azure IoT Hub, Stream Analytics, and Power BI dashboard
 
 The goal of this project is to be able to detect and count the people with Percept DK advice and show the figure in Power BI dashboard.
-
+test
 
 ## Solution Architecture
 
